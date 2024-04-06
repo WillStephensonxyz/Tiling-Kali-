@@ -1,0 +1,9 @@
+---
+
+- hosts: all 
+  become: true 
+  tasks: 
+
+  - name: install tmux terminal multiplexer 
+    apt: 
+      name: tmux 
