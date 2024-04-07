@@ -1,0 +1,8 @@
+---
+
+- name: "Installing rofi window switcher" 
+  become: true 
+  become_method: sudo 
+    apt: 
+      name: tmux 
+      state: present 
