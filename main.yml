@@ -1,6 +1,6 @@
 --- 
 - name: "Customizing Kali Linux" 
-  hosts: inventory 
+  hosts: localhost 
   connection: local 
   roles:
     - role: "roles/configure-zsh" 
