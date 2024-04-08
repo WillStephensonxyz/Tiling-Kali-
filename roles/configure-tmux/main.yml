@@ -1,9 +1,0 @@
---- 
-
-- name: "Installing tmux terminal multiplexer" 
-  become: true 
-  become_method: sudo 
-    apt: 
-      name: tmux 
-      state: present 
-  
