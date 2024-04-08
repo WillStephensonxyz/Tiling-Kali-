@@ -257,10 +257,14 @@ if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
 
-# Set vim keys 
+# start tmux on terminal launch 
+if command -v tmux &> /dev/null && [[ -z "$TMUX" ]]; then 
+   tmux attach || tmux new-session 
+fi  
+
+# set vim keys 
 set -o vi 
 
-# Aliases 
+# aliases 
 alias c='clear' 
 alias h='cd ~' 
-
