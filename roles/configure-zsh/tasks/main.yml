@@ -1,0 +1,8 @@
+---
+# tasks file for configure-zsh
+- name: "Copy .zshrc" 
+  copy: 
+    src: "{{ role_path }}/files/.zshrc" 
+    dest: "{{ ansible_env.HOME }}" 
+    owner: "{{ ansible_user }}" 
+    group: "{{ ansible_user }}" 

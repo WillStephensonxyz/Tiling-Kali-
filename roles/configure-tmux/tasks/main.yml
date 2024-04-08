@@ -1,0 +1,14 @@
+---
+# tasks file for configure-tmux
+- name: "Installing tmux terminal multiplexer" 
+  apt: 
+    name: tmux 
+    state: present 
+  become: true 
+  become_method: sudo 
+- name: "Copying tmux config to home directory" 
+  copy: 
+    src: "{{ role_path }}/files/tmux.conf" 
+    dest: "{{ ansible_env.HOME }}" 
+    owner: "{{ ansible_user }}" 
+    group: "{{ ansible_user }}" 
