@@ -4,8 +4,8 @@
   apt: 
     name: i3 
     state: present 
-    become: true 
-    become_method: sudo 
+  become: true 
+  become_method: sudo 
 - name: "Creating .config file" 
   file: 
     path: "/home/{{ ansible_user_id }}/.config" 
