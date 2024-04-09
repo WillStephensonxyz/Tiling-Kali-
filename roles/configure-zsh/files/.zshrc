@@ -259,7 +259,7 @@ fi
 
 # start tmux on terminal launch 
 if command -v tmux &> /dev/null && [[ -z "$TMUX" ]]; then 
-   tmux attach || tmux new-session 
+   tmux new-session 
 fi  
 
 # set vim keys 

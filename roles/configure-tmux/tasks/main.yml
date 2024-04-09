@@ -12,3 +12,5 @@
     dest: "/home/{{ ansible_user_id }}" 
     owner: "{{ ansible_user_id }}" 
     group: "{{ ansible_user_id }}" 
+- name: "Running source on .tmux.conf" 
+  shell: tmux source-file ~/.tmux.conf

@@ -4,8 +4,7 @@
   connection: local 
   roles:
     - role: "roles/configure-zsh" 
-    - role: "roles/configure-tmux"
+    - role: "roles/configure-i3wm"
     - role: "roles/configure-rofi" 
-    - role: "roles/configure-i3wm" 
+    - role: "roles/configure-tmux" 
     - role: "roles/configure-docker" 
-
