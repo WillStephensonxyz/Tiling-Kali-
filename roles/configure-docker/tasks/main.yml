@@ -1,2 +1,16 @@
 ---
 # tasks file for configure-docker
+- name: "Installing docker container application development" 
+  apt: 
+    name: docker.io
+    state: present 
+  become: true 
+  become_method: sudo  
+- name: "Adding user to docker group" 
+  user: "{{ ansible_user_id }}" 
+    groups: docker 
+    append: yes 
+  become: true 
+  become_method: sudo  
+  
+
