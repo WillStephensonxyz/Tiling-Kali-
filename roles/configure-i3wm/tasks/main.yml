@@ -23,7 +23,7 @@
 - name: "Copying i3 config file to ~/.config/i3" 
   copy: 
     src: "{{ role_path }}/files/config" 
-    dest: "/home/{{ ansible_user_id }}/.config/i3 " 
+    dest: "/home/{{ ansible_user_id }}/.config/i3/config" 
     mode: 0600 
     owner: "{{ ansible_user_id }}"  
     group: "{{ ansible_user_id }}"  
