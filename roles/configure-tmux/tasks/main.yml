@@ -8,7 +8,7 @@
   become_method: sudo 
 - name: "Copying tmux config to home directory" 
   copy: 
-    src: "{{ role_path }}/files/tmux.conf" 
+    src: "{{ role_path }}/files/.tmux.conf" 
     dest: "/home/{{ ansible_user_id }}" 
     owner: "{{ ansible_user_id }}" 
     group: "{{ ansible_user_id }}" 
