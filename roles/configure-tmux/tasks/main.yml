@@ -10,5 +10,5 @@
   copy: 
     src: "{{ role_path }}/files/tmux.conf" 
     dest: "{{ ansible_env.HOME }}" 
-    owner: "{{ ansible_user }}" 
-    group: "{{ ansible_user }}" 
+    owner: "{{ ansible_user_id }}" 
+    group: "{{ ansible_user_id }}" 

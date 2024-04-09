@@ -11,19 +11,19 @@
     path: "{{ ansible_env.HOME }}/.config" 
     state: "directory" 
     mode: 0750
-    owner: "{{ ansible_user }}"   
-    group: "{{ ansible_user }}"  
+    owner: "{{ ansible_user_id }}"   
+    group: "{{ ansible_user_id }}"  
 - name: "Creating i3 directory in .config" 
   file: 
     path: "{{ansible_env.HOME }}/.config/i3" 
     state: "directory" 
     mode: 0750
-    owner: "{{ ansible_user }}"  
-    group: "{{ ansible_user }}"   
+    owner: "{{ ansible_user_id }}"  
+    group: "{{ ansible_user_id }}"   
 - name: "Copying i3 config file to ~/.config/i3" 
   copy: 
     src: "{{ role_path }}/files/config" 
     dest: "{{ ansible_env.HOME }}/.config/i3 " 
     mode: 0600 
-    owner: "{{ ansible_user }}"  
-    group: "{{ ansible_user }}"  
+    owner: "{{ ansible_user_id }}"  
+    group: "{{ ansible_user_id }}"  
