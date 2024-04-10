@@ -3,14 +3,13 @@
 - name: "Installing additional tools" 
   become: true 
   become_method: sudo 
-  tasks: 
-    - name: "Installing {{ item }}" 
-      package: 
-        name: "{{ item }}" 
-        state: present 
-      loop: 
-        - pspy 
-        - peass 
-        - chisel 
-        - xclip 
-        - feh
+  - name: "Installing {{ item }}" 
+    package: 
+      name: "{{ item }}" 
+      state: present 
+    loop: 
+      - pspy 
+      - peass 
+      - chisel 
+      - xclip 
+      - feh
