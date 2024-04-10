@@ -17,7 +17,7 @@
 	"Extensions": {
       "Install": [
 {% for item in FirefoxPlugins %} 
-		"https://addons.mozzila.org/firefox/downloads/latest/{{ item }}/latest.xpi"{{ "," if not loop.last }} 
+		"https://addons.mozilla.org/firefox/downloads/latest/{{ item }}/latest.xpi"{{ "," if not loop.last }} 
 {% endfor %} 
     ]
     },
