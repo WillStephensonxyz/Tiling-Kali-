@@ -3,6 +3,7 @@
   hosts: localhost 
   connection: local 
   roles:
+    - role: "roles/install-tools" 
     - role: "roles/configure-zsh" 
     - role: "roles/configure-i3wm"
     - role: "roles/configure-rofi" 

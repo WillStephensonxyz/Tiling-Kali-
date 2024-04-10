@@ -27,3 +27,10 @@
     mode: 0600 
     owner: "{{ ansible_user_id }}"  
     group: "{{ ansible_user_id }}"  
+- name: "Copying wallpaper" 
+  copy: 
+    src: "{{ role_path }}/files/wallpaper.png" 
+    dest: "/home/{{ ansible_use_id }}/Pictures/wallpaper.png" 
+    mode: 0644 
+    owner: "{{ ansible_user_id }}" 
+    group: "{{ ansible_user_id }}" 

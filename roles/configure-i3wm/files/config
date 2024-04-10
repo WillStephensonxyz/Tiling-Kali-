@@ -191,4 +191,5 @@ bar {
         position top
 } 
 
-for_window [class=".*"] border pixel 3 
+# setting wallpaper 
+exec --no-startup-id feh --bg-fill ~/Pictues/wallpaper.png
