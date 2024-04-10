@@ -1,0 +1,4 @@
+---
+# tasks file for configure-browser
+- include: burpsuite.yml 
+- include: firefox.yml 
