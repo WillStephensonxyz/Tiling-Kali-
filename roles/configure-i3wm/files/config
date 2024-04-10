@@ -191,5 +191,8 @@ bar {
         position top
 } 
 
+# borderless windows 
+for_window [class=".*"] border pixel 0 
+
 # setting wallpaper 
 exec --no-startup-id feh --bg-fill ~/Pictues/wallpaper.png
