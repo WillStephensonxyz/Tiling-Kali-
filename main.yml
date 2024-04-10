@@ -8,3 +8,4 @@
     - role: "roles/configure-rofi" 
     - role: "roles/configure-tmux" 
     - role: "roles/configure-docker" 
+    - role: "roles/configure-browser" 
