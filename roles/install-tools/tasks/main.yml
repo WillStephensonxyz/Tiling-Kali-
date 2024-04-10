@@ -1,0 +1,15 @@
+---
+# tasks file for install-tools
+- name: "Installing additional tools" 
+  become: true 
+  become_method: sudo 
+  tasks: 
+    - name: "Installing {{ item }}" 
+      package: 
+        name: "{{ item }}" 
+        state: present 
+      loop: 
+        - pspy 
+        - peass 
+        - chisel 
+        - xclip 
