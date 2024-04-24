@@ -28,6 +28,11 @@ git clone https://github.com/WillStephensonxyz/Tiling-Kali-.git
 ```bash 
 sudo whoami 
 ```
+- Tmux needs to be run for the first time to create the defaults directory to avoid erros
+```bash
+tmux
+```
+
 - Run ansible-playbook main.yml 
 ```bash
 ansible-playbook main.yml 
