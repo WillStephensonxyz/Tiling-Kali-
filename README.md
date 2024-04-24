@@ -32,7 +32,6 @@ sudo whoami
 ```bash
 tmux
 ```
-
 - Run ansible-playbook main.yml 
 ```bash
 ansible-playbook main.yml 
@@ -40,7 +39,6 @@ ansible-playbook main.yml
 
 ### Post-Installation 
 
-It is reccomended to log out or reboot the device after installation, this will solve any issues with config files being sources correctly. I3wm also needs to be selected on the login page of the device to be used. 
-
+You'll need to log out or reboot the device after installation, this will solve any issues with config files being sourced correctly. I3wm also needs to be selected on the login page of the device to be used. 
  Thanks to Ippsec for inspiring this project, note that the firefox extensions playbook is borrowed from his Parrot Ansible playbook 
 - https://github.com/IppSec/parrot-build
