@@ -195,4 +195,4 @@ bar {
 for_window [class=".*"] border pixel 0 
 
 # setting wallpaper 
-exec --no-startup-id feh --bg-fill ~/Pictues/wallpaper.png
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.png
