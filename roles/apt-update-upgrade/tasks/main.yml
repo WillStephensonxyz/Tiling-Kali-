@@ -1,14 +1,14 @@
 ---
 # tasks file for apt-update-upgrade
-- name: update and upgrade apt 
+- name: "Update and upgrade apt"
   hosts: all 
   become: yes 
   tasks: 
-    - name: Update apt package cache
+    - name: "Update apt package cache"
       apt: 
         update_cache: yes 
 
-    - name: Upgrade all packages 
+    - name: "Upgrade all packages"
       apt: 
         upgrade: yes 
 
