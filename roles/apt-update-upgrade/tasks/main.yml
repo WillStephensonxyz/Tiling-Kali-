@@ -1,8 +1,10 @@
 ---
 # tasks file for apt-update-upgrade
-- name: "Update and upgrade apt"
+- name: "Updating list of available packages"
   become: yes 
   apt: 
     update_cache: yes 
+- name: "Upgrading all packages"  
+  become: yes 
   apt: 
     upgrade: yes 
