@@ -2,7 +2,7 @@
 - name: "Customizing Kali Linux" 
   hosts: localhost 
   connection: local 
-    roles:
+  roles:
     - role: "roles/install-tools" 
     - role: "roles/configure-zsh" 
     - role: "roles/configure-i3wm"
