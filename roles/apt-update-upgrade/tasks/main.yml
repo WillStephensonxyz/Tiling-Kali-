@@ -1,14 +1,8 @@
 ---
 # tasks file for apt-update-upgrade
 - name: "Update and upgrade apt"
-  hosts: localhost 
   become: yes 
-  tasks: 
-    - name: "Update apt package cache"
-      apt: 
-        update_cache: yes 
-
-    - name: "Upgrade all packages"
-      apt: 
-        upgrade: yes 
-
+  apt: 
+    update_cache: yes 
+  apt: 
+    upgrade: yes 
