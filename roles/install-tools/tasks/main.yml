@@ -11,5 +11,6 @@
     - peass 
     - chisel 
     - gobuster
+    - seclists 
     - xclip 
     - feh
