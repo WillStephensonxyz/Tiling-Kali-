@@ -10,5 +10,6 @@
     - pspy 
     - peass 
     - chisel 
+    - gobuster
     - xclip 
     - feh
