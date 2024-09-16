@@ -20,7 +20,7 @@ Firefox extensions are also installed, namely foxyproxy for use with burpsuite
 ```bash
 apt install ansible
 ```
-- Clone the repo and enter it (git clone)
+- Clone the repo
 ```bash 
 git clone https://github.com/WillStephensonxyz/Tiling-Kali-.git
 ```
@@ -34,6 +34,14 @@ tmux
 ```
 - Run ansible-playbook main.yml 
 ```bash
+ansible-playbook main.yml 
+```
+
+```bash
+apt install ansible
+git clone https://github.com/WillStephensonxyz/Tiling-Kali-.git
+sudo whoami 
+tmux
 ansible-playbook main.yml 
 ```
 
